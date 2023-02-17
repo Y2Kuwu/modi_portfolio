@@ -1,19 +1,3 @@
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
 .App {
   text-align: center;
 }
@@ -62,8 +46,9 @@ code {
   width: 20rem;
   height: 25rem;
   border-radius: 5%;
-  box-shadow: #61dafb 4px 4px;
+  box-shadow: #282c34 4px 4px;
   z-index: 1;
+  
 }
 
 .myState
@@ -76,12 +61,11 @@ code {
   background-color: #282c34; 
   /* opacity: .2; */
   border-radius: 5px;
-  box-shadow: #61dafb 4px 4px;
+  box-shadow: #282c34 4px 4px;
   z-index: 1;
 }
 #state1
 {
-  font-family: 'IBM Plex Mono';
   display: flex;
   justify-content: space-evenly;
   padding: 1rem;
@@ -94,7 +78,6 @@ code {
 }
 #state2
 {
-  font-family: 'IBM Plex Mono';
   display: flex;
   justify-content: space-evenly;
   padding: 1rem;
@@ -107,7 +90,6 @@ code {
 }
 #state3
 {
-  font-family: 'IBM Plex Mono';
   display: flex;
   justify-content: space-evenly;
   padding: 1rem;
@@ -123,7 +105,8 @@ code {
 {
   position: fixed;
   z-index: 2;
-  margin-left: 65rem;
+  
+  margin-left: 50rem;
 }
 
 ul
@@ -137,108 +120,37 @@ ul:visited
 {
  text-decoration: none;
 }
-#brandCenter
-{
-  color: white;
-  list-style: none;
-  display: flex;
-  background-color: #282c34;
-  justify-content: space-around;
-  margin-top: 1.5rem;
-  text-decoration: none;
-  font-family: 'IBM Plex Mono';
-}
-
 #li1
 {
-  color: white;
   list-style: none;
   display: flex;
   background-color: #282c34;
   justify-content: space-around;
   margin-top: 1.5rem;
   text-decoration: none;
-  font-family: 'IBM Plex Mono';
-  text-shadow: #61dafb 1px 1px;
 
 }
 #li2
 {
-  color: white;
   list-style: none;
   display: flex;
   background-color: #282c34;
   margin-top: 1.5rem;
   justify-content: space-around;
   text-decoration: none;
-  font-family: 'IBM Plex Mono';
-  text-shadow: #61dafb 1px 1px;
 
 }
 #li3
 {
-  color: white;
   list-style: none;
   display: flex;
   background-color: #282c34;
   margin-top: 1.5rem;
   justify-content: space-around;
   text-decoration: none;
-  font-family: 'IBM Plex Mono';
-  text-shadow: #61dafb 1px 1px;
 }
-#li1:hover , #li2:hover , #li3:hover
+#li1:visited , #li2:visited , #li3:visited
 {
-  text-shadow: black 1px 1px;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: black;
+  color: white;
 }
 
-.linkCard
-{
-  background-color: #282c34;
-  border-radius: 10px;
-  margin-left: .5rem;
-  margin-right: .5rem;
-}
-.linkBtn
-{
-  font-family: 'IBM Plex Mono';
-}
-.linkBtn:hover
-{
-  background-color: #393f4c;
-  border-radius: 5px;
-}
-.my
-{
-  font-family: 'IBM Plex Mono';
-  color: maroon;
-}
-.git
-{
-  background-color: black;
-  border-radius: 5px;
-}
-.git:hover
-{
-  background-color: white;
-}
-
-.projCard
-{
-  background-color: #282c34;
-  border-radius: 10px;
-  margin-left: .5rem;
-  margin-right: .5rem;
-}
-.projBtn
-{
-  font-family: 'IBM Plex Mono';
-}
-.projBtn:hover
-{
-  background-color: #393f4c;
-  border-radius: 5px;
-}
