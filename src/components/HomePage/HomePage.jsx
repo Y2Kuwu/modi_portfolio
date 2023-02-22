@@ -32,7 +32,7 @@ export default class HomePage extends Component
     // console.log(this.state.seconds)
     // this.setState(this.state.brandState = props)
    
-    // this.state.count = this.state.count+1;
+    this.state.count = this.state.count+1;
     // this.state.brandState = '';
     // this.setState({[evt.target.name] : evt.target.value});
     // console.log(this.state.brandState)
@@ -51,7 +51,7 @@ render(){
     const {statement} = this.state;
     if(statement)
     {
-        this.state.brandState = <IntTrack data = {this.state.statement}/>
+        this.state.brandState = <IntTrack data = {this.state.count}/>
         console.log(statement)
     }
     else

@@ -72,13 +72,13 @@ function nameBranding()
   {
     if(seconds < fnArray.length)
     {
-
+        
         firstBind = newFn.concat(fnArray[seconds])
         main.push(firstBind);
         return main.map(x => x);
         
     }
-    else if(seconds < fnArray.length + lnArray.length + 5)
+    else if(seconds <= fnArray.length + lnArray.length + 5)
     {
         secondBind = newLn.concat(lnArray[seconds-fnArray.length])
         main.push(secondBind);
@@ -89,7 +89,7 @@ function nameBranding()
     //     return main.map(x=>x)
     // }
     
-    else 
+    else
     {   
        
         main = [];
