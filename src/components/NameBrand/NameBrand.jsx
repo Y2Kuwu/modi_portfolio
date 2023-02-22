@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { useState, useEffect } from 'react';
 
-import $ from "jquery"
+// import $ from "jquery"
 
 const fade = document.querySelector("nameTrack")
 
