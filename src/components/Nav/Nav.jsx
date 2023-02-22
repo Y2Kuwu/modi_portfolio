@@ -30,7 +30,7 @@ render(){
         <ul>
         <li ><Link to ="/HomePage" id = "li1" onClick ={this.handlehome}>Home</Link></li>
         <li ><Link to = "/Links" id = "li2">My links</Link></li>
-        <li ><Link to = "/MyContact" id = "li3">Contact info</Link></li>
+        <li ><Link to = "/Contact" id = "li3">Contact info</Link></li>
         </ul>
         </nav>
     )

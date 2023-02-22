@@ -1,31 +1,91 @@
 import React, { Component } from "react";
-import { useState } from "react";
+import { First } from "react-bootstrap/esm/PageItem";
+import HomeAnimation from "../HomeAnimation/HomeAnimation";
+
+
+//import { NameBrand } from "../NameBrand/NameBrand";
+import  IntTrack  from "../NameBrand/NameBrand";
+
+
 //import me from './public/me_blk&wht.jpg';
+const profile = document.getElementsByClassName("myPicture");
+
 
 export default class HomePage extends Component 
 {
-    state =
+    constructor(props){
+    super(props)
+    this.state =
     {
         statement : false,
-        pictureState : ''
+        pictureState : '',
+        brandState : '',
+        brandPlaceHolder: '',
+        count: 0,
     }   
-
+    this.countHere = this.countHere.bind(this);
+}
+ countHere = () =>
+ {
+    this.setState({brandState : IntTrack})
+    // evt.preventDefault();
+    // console.log(this.state.seconds)
+    // this.setState(this.state.brandState = props)
    
+    // this.state.count = this.state.count+1;
+    // this.state.brandState = '';
+    // this.setState({[evt.target.name] : evt.target.value});
+    // console.log(this.state.brandState)
+    // if(this.state.count+=1)
+    // {
+    
+    //     this.state.brandState = IntTrack;
+    //     console.log()
+ }
 
 
-   
+
+
 
 render(){
     const {statement} = this.state;
+    if(statement)
+    {
+        this.state.brandState = <IntTrack data = {this.state.statement}/>
+        console.log(statement)
+    }
+    else
+    {
+        console.log(statement)
+        this.state.brandState = ''
+    }
 return(
     <>
         
-
-        <img src={'/me_blk&wht.jpg'} className="myPicture" onMouseEnter={() => this.setState({statement : !statement})}/>
-        
+        <img src={'/me_blk&whtedit.png'} className="myPicture" onMouseEnter={() => this.setState({statement : !statement})}/>
         {statement
-        ? <div className="myState">
+        
+        ?   <div className="myState">
+            <div className="nameBrander">
+            {/* <p value={this.state.brandState} onMouseEnter={this.countHere}/> */}
+            {/* <>{this.state.brandState}</> */}
+            {/* <>{this.state.count+1}</> */}
+            {this.state.brandState}
+           
+            
+            {/* <IntTrack data={this.state.statement}/> */}
+           
+           {/* <p>{console.log(this.state.brandState)}</p> */}
+            {/* <p>{this.countHere()}</p> */}
+            {/* <IntTrack data={this.state.count}/> */}
+            {/* <IntTrack/> */}
+            {/* <p>{this.state.brandState}data={this.state.count}</p> */}
+            
+            
+            </div>
+       
         <p id="brandCenter"> Glad you could make it!</p>
+        <img className = "skyward" src = "/ladder.png"/>
         <p id="state1">My name is James Fox, I am a Fullstack Software Engineer with a mindset geared towards functionality, presentability, and efficiency.
            I have experience creating and designing pages like the one you're viewing now. I've worked both independently and as a team to create some promising applications, and always looking to the next chance to improve my skills.
            Technology and design has always been something I've been drawn to.. To make it a career is truly a gift.
@@ -36,10 +96,12 @@ return(
       
         <p id="state3">Take a look around the site and tell me what you think!<br></br>
         And thank you for stopping by.</p>
-        
+            
         </div>
+        
         :null
         }
+        
     </>
 )}
 }

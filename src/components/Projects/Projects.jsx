@@ -14,6 +14,12 @@ import {GiBrain} from "react-icons/gi";
 import {GiSandSnake} from "react-icons/gi";
 import { useContext } from 'react';
 
+import Calculator from './Calculator';
+import Tic from './Tic';
+import Slots from './Slots';
+import Match from './Match';
+import Snake from './Snake';
+
 const styleGit = {color:"maroon"};
 
 export default function Projects()
@@ -28,9 +34,9 @@ export default function Projects()
           </Card.Header>
           <Accordion.Collapse eventKey="0">
             <Card.Body>
-              <img src = ""></img>
-              ABOUT
+              
               <a href = "https://ticattacktoe.herokuapp.com/" className='git' target="_blank" rel="noopener noreferrer"><GiTicTacToe style={styleGit}/></a>
+              <Tic></Tic>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -40,9 +46,9 @@ export default function Projects()
           </Card.Header>
           <Accordion.Collapse eventKey="1">
             <Card.Body>
-            <img src = ""></img>
-            ABOUT
+            
             <a href= "https://coinconsumer.netlify.app/" target="_blank" rel="noopener noreferrer"><GiTwoCoins style={styleGit}/></a>
+            <Slots></Slots>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -57,9 +63,8 @@ export default function Projects()
   </Card.Header>
   <Accordion.Collapse eventKey="2">
     <Card.Body>
-      <img src = ""></img>
-      ABOUT
       <a href = "https://perfectmatchskills.herokuapp.com/" className='git' target="_blank" rel="noopener noreferrer"><GiTechnoHeart style={styleGit}/></a>
+      <Match></Match>
     </Card.Body>
   </Accordion.Collapse>
 </Card>
@@ -69,9 +74,8 @@ export default function Projects()
   </Card.Header>
   <Accordion.Collapse eventKey="3">
     <Card.Body>
-    <img src = ""></img>
-    ABOUT
     <a href= "https://project-004.herokuapp.com/" target="_blank" rel="noopener noreferrer"><GiScrollQuill style={styleGit}/></a>
+    
     </Card.Body>
   </Accordion.Collapse>
 </Card>
@@ -85,9 +89,10 @@ export default function Projects()
           </Card.Header>
           <Accordion.Collapse eventKey="4">
             <Card.Body>
-              <img src = ""></img>
-              ABOUT
-              <a href = "https://github.com/Y2Kuwu/Calculator" className='git' target="_blank" rel="noopener noreferrer"><GiBrain style={styleGit}/></a>
+              
+             
+              <a href = "https://abasiccalculator.herokuapp.com/" className='git' target="_blank" rel="noopener noreferrer"><GiBrain style={styleGit}/></a>
+              <Calculator></Calculator>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -97,9 +102,8 @@ export default function Projects()
           </Card.Header>
           <Accordion.Collapse eventKey="5">
             <Card.Body>
-            <img src = ""></img>
-            ABOUT
             <a href= "https://github.com/Y2Kuwu/snake-game" target="_blank" rel="noopener noreferrer"><GiSandSnake style={styleGit}/></a>
+            <Snake></Snake>
             </Card.Body>
           </Accordion.Collapse>
         </Card>

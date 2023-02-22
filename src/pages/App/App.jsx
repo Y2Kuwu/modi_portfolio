@@ -6,24 +6,31 @@ import Nav from "../../components/Nav/Nav";
 import '../../index.css';
 import {ContextAwareToggle} from "../../components/MyLinks/MyLinks";
 import { Links } from "../../components/MyLinks/MyLinks";
+import Contact from "../../components/Contact/Contact";
+import Hide from "../../components/Funk/Funk";
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App()
 {
+    //const [wait, setWait] = usestate();
     return(
         <>
         <main>
+            
         <Nav/>
+        
         <Routes>
         <Route path = "/HomePage" element={<HomePage/>}/>
         <Route path = "/ContextAwareToggle" element={<ContextAwareToggle/>}/> 
         <Route path = "/Links" element={<Links/>} /> 
+        <Route path = "/Contact" element={<Contact/>} /> 
         <Route path = "/Game"/>
-
+        
 
         </Routes>
-        
+        {/* <Hide/> */}
         
         </main>
         </>
