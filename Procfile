@@ -1,1 +1,1 @@
-web: gunicorn freshfolio.wsgi
+web: gunicorn newportfolio.wsgi
