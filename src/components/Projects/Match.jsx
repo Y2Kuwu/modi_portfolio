@@ -11,7 +11,7 @@ export default function Match(){
     <ContextAwareToggle eventKey="6">ABOUT</ContextAwareToggle>
   </Card.Header>
   <Accordion.Collapse eventKey="6">
-    <Card.Body>
+    <Card.Body className="match">
     
       <img src = "landing.png"></img>
         <p>Landing page for Perfect.Match() A website designed to make developers to their ideal job. Utilizing an API to find recent matches by keywords defined by the user or by relevency.</p>

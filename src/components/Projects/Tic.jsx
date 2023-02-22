@@ -11,7 +11,7 @@ export default function Tic(){
     <ContextAwareToggle eventKey="6">ABOUT</ContextAwareToggle>
   </Card.Header>
   <Accordion.Collapse eventKey="6">
-    <Card.Body>
+    <Card.Body className="tic">
     <p>Classic match three tic-tac-toe. CPU 'chooses' random play within the remaining squares</p>
       
       <p>Start sequence: choose X or O, exit the game, or start over.</p>
@@ -21,8 +21,6 @@ export default function Tic(){
       <img src = "cpuWin.png"></img>
       <p>Loss message</p>
       <img src = "cpuWinConfirm.png"></img>
-      <p>Player wins</p>
-      <img src = "plyWin.png"></img>
       <p>Win Message</p>
       <img src = "plyWinConfirm.png"></img>
 

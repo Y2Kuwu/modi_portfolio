@@ -11,7 +11,7 @@ export default function Snake(){
     <ContextAwareToggle eventKey="6">ABOUT</ContextAwareToggle>
   </Card.Header>
   <Accordion.Collapse eventKey="6">
-    <Card.Body>
+    <Card.Body className="snake">
         
       <p>C++ game utilizing SFML library. Reads user input (up,down,left,right/WASD,SpaceBar), tracks movement, collision points, score, color change, and changes in speed.</p>
       <img src = "start_menu1.png"></img>

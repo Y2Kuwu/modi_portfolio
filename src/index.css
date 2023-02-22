@@ -144,11 +144,61 @@ code {
   outline-width: 4px;
 }
 
+.calc
+{
+  font-family: 'IBM Plex Mono';
+  color: wheat;
+  background-color: #1e2127;
+  border-radius: 10px;
+}
+.tic
+{
+  font-family: 'IBM Plex Mono';
+  display: flex;
+  flex-direction: column;
+}
+.snake
+{
+  font-family: 'IBM Plex Mono';
+
+  color: wheat;
+  background-color: #1e2127;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  max-height: 60%;
+  max-width: 60%;
+}
+.slots
+{
+  font-family: 'IBM Plex Mono';
+  display: flex;
+  flex-direction: column;
+}
+  .cheat, .score
+  {
+    height: auto;
+    max-width: 60%;
+  }
+
+
+.match
+{
+  font-family: 'IBM Plex Mono';
+  color:wheat;
+  display: flex;
+  flex-direction: column;
+  background-color: #282c34;
+  justify-content: space-between;
+  height: auto;
+  max-width: 80%;
+}
+
 .dynNav
 {
   position: fixed;
   z-index: 2;
-  margin-left: 65rem;
+  margin-left: 80rem;
 }
 
 ul
