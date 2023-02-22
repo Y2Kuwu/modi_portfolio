@@ -1,1 +1,1 @@
-web: gunicorn newportfolio.wsgi
+web: bin/boot
