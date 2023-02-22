@@ -31,7 +31,6 @@ export default class HomePage extends Component
     // evt.preventDefault();
     // console.log(this.state.seconds)
     // this.setState(this.state.brandState = props)
-   
     this.state.count = this.state.count+1;
     // this.state.brandState = '';
     // this.setState({[evt.target.name] : evt.target.value});
