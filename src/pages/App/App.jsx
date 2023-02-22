@@ -7,7 +7,7 @@ import '../../index.css';
 import {ContextAwareToggle} from "../../components/MyLinks/MyLinks";
 import { Links } from "../../components/MyLinks/MyLinks";
 import Contact from "../../components/Contact/Contact";
-import Hide from "../../components/Funk/Funk";
+// import Hide from "../../components/Funk/Funk";
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 

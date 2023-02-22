@@ -1,14 +1,9 @@
 import React, { Component } from "react";
-import { First } from "react-bootstrap/esm/PageItem";
-import HomeAnimation from "../HomeAnimation/HomeAnimation";
-
-
-//import { NameBrand } from "../NameBrand/NameBrand";
 import  IntTrack  from "../NameBrand/NameBrand";
 
 
-//import me from './public/me_blk&wht.jpg';
-const profile = document.getElementsByClassName("myPicture");
+
+// const profile = document.getElementsByClassName("myPicture");
 
 
 export default class HomePage extends Component 
@@ -66,19 +61,11 @@ return(
         
         ?   <div className="myState">
             <div className="nameBrander">
-            {/* <p value={this.state.brandState} onMouseEnter={this.countHere}/> */}
-            {/* <>{this.state.brandState}</> */}
-            {/* <>{this.state.count+1}</> */}
+       
             {this.state.brandState}
            
             
-            {/* <IntTrack data={this.state.statement}/> */}
-           
-           {/* <p>{console.log(this.state.brandState)}</p> */}
-            {/* <p>{this.countHere()}</p> */}
-            {/* <IntTrack data={this.state.count}/> */}
-            {/* <IntTrack/> */}
-            {/* <p>{this.state.brandState}data={this.state.count}</p> */}
+       
             
             
             </div>
