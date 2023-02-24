@@ -4,11 +4,13 @@ import './index.css';
 import App from './pages/App/App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
+import HomePage from './components/HomePage/HomePage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
     <Router>
     <App />
+    <HomePage/>
     </Router>
     //removed strict// was duplicating Intrack
 );

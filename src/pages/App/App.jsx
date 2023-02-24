@@ -20,7 +20,7 @@ function App()
         <main>
             
         <Nav/>
-        <HomePage/>
+        {/* <HomePage/> */}
         <Routes>
         {/* <Route path = "/HomePage" element={<HomePage/>}/> */}
         <Route path = "/ContextAwareToggle" element={<ContextAwareToggle/>}/> 
