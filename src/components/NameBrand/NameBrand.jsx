@@ -21,7 +21,7 @@ const IntTrack = (props) => {
     // const [reset, setReset] = useState();
     //const [letter, setLetter] = useState([]);
     // const [wait, statement] = useState(false);
-    console.log(props)
+    // console.log(props)
 
 useEffect(() => {
     const interval = setInterval(() => {

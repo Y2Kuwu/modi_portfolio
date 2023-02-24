@@ -10,7 +10,7 @@ root.render(
 
     <Router>
     <App />
-    <HomePage/>
+    
     </Router>
     //removed strict// was duplicating Intrack
 );

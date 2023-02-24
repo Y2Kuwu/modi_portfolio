@@ -46,11 +46,11 @@ render(){
     if(statement)
     {
         this.state.brandState = <IntTrack data = {this.state.count}/>
-        console.log(statement)
+        // console.log(statement)
     }
     else
     {
-        console.log(statement)
+        // console.log(statement)
         this.state.brandState = ''
     }
 return(

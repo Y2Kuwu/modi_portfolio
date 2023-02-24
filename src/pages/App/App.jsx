@@ -8,19 +8,23 @@ import {ContextAwareToggle} from "../../components/MyLinks/MyLinks";
 import { Links } from "../../components/MyLinks/MyLinks";
 import Contact from "../../components/Contact/Contact";
 // import Hide from "../../components/Funk/Funk";
-
+import { useState } from "react";
 // import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App()
 {
-    //const [wait, setWait] = usestate();
+    const [hide, setHide] = useState();
     return(
-        <>
+       
         <main>
-            
+            {hide ?  
+        <>
         <Nav/>
-        {/* <HomePage/> */}
+        
+        
+        
         <Routes>
         {/* <Route path = "/HomePage" element={<HomePage/>}/> */}
         <Route path = "/ContextAwareToggle" element={<ContextAwareToggle/>}/> 
@@ -32,8 +36,12 @@ function App()
         </Routes>
         {/* <Hide/> */}
         
-        </main>
+        
         </>
+        
+        :
+        <HomePage hide={hide}/>}
+        </main>
     );
 }
 export default App;
