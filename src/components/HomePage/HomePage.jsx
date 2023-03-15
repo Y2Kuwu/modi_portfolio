@@ -4,9 +4,12 @@ import  IntTrack  from "../NameBrand/NameBrand";
 
 
 // const profile = document.getElementsByClassName("myPicture");
+function passStatement()
+{
 
+}
 
-export default class HomePage extends Component 
+class HomePage extends Component 
 {
     constructor(props){
     super(props)
@@ -40,7 +43,6 @@ export default class HomePage extends Component
 
 
 
-
 render(){
     const {statement} = this.state;
     if(statement)
@@ -58,10 +60,9 @@ return(
         
         <img src={'/me_blk&whtedit.png'} className="myPicture" onMouseEnter={() => this.setState({statement : !statement})}/>
         {statement
-        
+            
         ?   <div className="myState">
             <div className="nameBrander">
-       
             {this.state.brandState}
            
             
@@ -91,3 +92,4 @@ return(
     </>
 )}
 }
+export {HomePage, passStatement}
