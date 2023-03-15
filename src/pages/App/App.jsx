@@ -24,12 +24,12 @@ function App(props)
             
             
         <>
-        <Nav/>
-        <HomePage/>
+        <Nav />
+        {/* <HomePage/> */}
         
         
         <Routes>
-        {/* <Route path = "/HomePage" element={<HomePage/>}/> */}
+        <Route path = "/HomePage" element={<HomePage/>}/> 
         <Route path = "/ContextAwareToggle" element={<ContextAwareToggle/>}/> 
         <Route path = "/Links" onclick={hide} element={<Links/>} /> 
         <Route path = "/Contact" onclick={hide} element={<Contact/>} /> 

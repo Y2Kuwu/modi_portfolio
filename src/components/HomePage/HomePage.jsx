@@ -22,6 +22,7 @@ class HomePage extends Component
         count: 0,
     }   
     this.countHere = this.countHere.bind(this);
+    this.checkHide = this.checkHide.bind(this);
 }
  countHere = () =>
  {
@@ -40,7 +41,15 @@ class HomePage extends Component
     //     console.log()
  }
 
-
+checkHide()
+{
+    if(this.props.data == false)
+    {
+        console.log(this.props.data)
+    this.setState(d =>({
+        statement: this.props.data
+    }))
+}}
 
 
 render(){
@@ -58,7 +67,7 @@ render(){
 return(
     <>
         
-        <img src={'/me_blk&whtedit.png'} className="myPicture" onMouseEnter={() => this.setState({statement : !statement})}/>
+        <img src={'/me_blk&whtedit.png'} className="myPicture" onClick={() => this.setState({statement : !statement} ,this.checkHide()) }/>
         {statement
             
         ?   <div className="myState">
