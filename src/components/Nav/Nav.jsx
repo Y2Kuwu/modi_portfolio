@@ -56,11 +56,11 @@ render(){
         <>
         
   
-        {this.state.count% 2?
+        {/* {this.state.count% 2?
       
         {this.setState({thisStyle : "dynNav"})}
         :
-        {this.setState({thisStyle : "dynNav"}))
+        {this.setState({thisStyle : "dynNav"})) */}
 
   
         
