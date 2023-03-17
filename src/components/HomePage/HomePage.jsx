@@ -67,7 +67,7 @@ render(){
 return(
     <>
         
-        <img src={'/me_blk&whtedit.png'} className="myPicture" onClick={() => this.setState({statement : !statement} ,this.checkHide()) }/>
+        <img src={'/me_blk&whtedit.png'} className="myPicture" onClick={() => this.setState({statement : !statement}) }/>
         {statement
             
         ?   <div className="myState">

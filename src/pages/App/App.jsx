@@ -31,10 +31,9 @@ function App(props)
         <Routes>
         <Route path = "/HomePage" element={<HomePage/>}/> 
         <Route path = "/ContextAwareToggle" element={<ContextAwareToggle/>}/> 
-        <Route path = "/Links" onclick={hide} element={<Links/>} /> 
-        <Route path = "/Contact" onclick={hide} element={<Contact/>} /> 
+        <Route path = "/Links" element={<Links/>} /> 
+        <Route path = "/Contact" element={<Contact/>} /> 
         <Route path = "/Game"/>
-        {console.log(hide)}
 
         </Routes>
         {/* <Hide/> */}

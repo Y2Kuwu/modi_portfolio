@@ -1,4 +1,4 @@
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -59,7 +59,7 @@
   margin-right: 2rem;
   margin-left: 2rem;
   background-color: #282c34; 
-  /* opacity: .2; */
+  opacity: .2; 
   border-radius: 5px;
   box-shadow: #282c34 4px 4px;
   z-index: 1;
@@ -152,5 +152,5 @@ ul:visited
 #li1:visited , #li2:visited , #li3:visited
 {
   color: white;
-} */
+} 
 
