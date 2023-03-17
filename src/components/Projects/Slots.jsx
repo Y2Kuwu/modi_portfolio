@@ -13,13 +13,22 @@ export default function Slots(){
   <Accordion.Collapse eventKey="6">
     <Card.Body className="slots">
     
+    <p className="slotWord">Responsive slot machine with animations, accurate scoring, and audio events. All personally created assets, no CSS used besides placement and transparent buttons.</p>
       <img src = "slotMac.png"></img>
-      <p>Responsive slot machine with animations, accurate scoring, and audio events. All personally created assets, no CSS used besides placement and transparent buttons.</p>
+      <br></br>
+      <br></br>
+      <p className="slotWord">Matching two symbols and updated score</p>
       <img src = "slotMatch.png"></img>
-      Matching two symbols and updated score. 
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <p className="slotWord">Cheat button to avoid losing a point upon loss. Terminate button for rage quitting. </p>
+      <div className="cheatScore">
       <img src = "score.png" className="score"></img>
       <img src = "slotButtons.png" className="cheat"></img>
-      Cheat button to avoid losing a point upon loss. Terminate button for rage quitting. 
+      </div>
       
     </Card.Body>
   </Accordion.Collapse>

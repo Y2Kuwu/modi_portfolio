@@ -142,19 +142,34 @@ code {
   outline-width: 4px;
 }
 
+
 .calc
 {
   font-family: 'IBM Plex Mono';
   color: wheat;
   background-color: #1e2127;
   border-radius: 10px;
+  text-align: center;
 }
 .tic
 {
   font-family: 'IBM Plex Mono';
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+#tic1,#tic2,#tic3,#tic4
+{
+  max-width: 30rem;
+  
+}
+.pTic
+{
+  color: white;
+ background-color: black; 
+}
+
 .snake
 {
   font-family: 'IBM Plex Mono';
@@ -166,19 +181,69 @@ code {
   flex-direction: column;
   max-height: 60%;
   max-width: 60%;
+  text-align: center;
+  align-items: center;
 }
+#snk1,#snk2,#snk3,#snk4,#snk5
+{
+  max-width: 30rem;
+}
+
 .slots
 {
   font-family: 'IBM Plex Mono';
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
   .cheat, .score
   {
-    height: auto;
-    max-width: 60%;
+    display: inline-block;
+    max-width: 30rem;
+  }
+  .slotWord
+  {
+    background-color: black;
+    color:white
   }
 
+  .jobs
+  {
+    font-family: 'IBM Plex Mono';
+  
+    color: wheat;
+    background-color: #1e2127;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-height: 60%;
+    max-width: 60%;
+    text-align: center;
+    align-items: center;
+  }
+  #job1,#job2,#job3,#job4,#job5,#job6,#job7
+  {
+    max-width: 30rem;
+  }
+
+  .date
+  {
+    font-family: 'IBM Plex Mono';
+  
+    color: wheat;
+    background-color: #1e2127;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-height: 60%;
+    max-width: 60%;
+    text-align: center;
+    align-items: center;
+  }
+  #date1,#date2,#date3,#date4
+  {
+    max-width: 30rem;
+  }
 
 .match
 {
@@ -188,6 +253,7 @@ code {
   flex-direction: column;
   background-color: #282c34;
   justify-content: space-between;
+  text-align: center;
   height: auto;
   max-width: 80%;
 }
@@ -197,6 +263,14 @@ code {
   position: fixed;
   z-index: 2;
   margin-left: 80rem;
+}
+
+.shiftNav
+{
+  position: fixed;
+  z-index: 2;
+  margin-left: 10rem;
+
 }
 
 ul
@@ -577,3 +651,10 @@ ul:visited
   }
 
  */
+ .prog
+ {
+  font-family: 'IBM Plex Mono';
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  color: white;
+ }

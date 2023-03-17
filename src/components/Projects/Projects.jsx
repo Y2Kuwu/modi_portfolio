@@ -12,6 +12,9 @@ import {GiTechnoHeart} from "react-icons/gi";
 import {GiScrollQuill} from "react-icons/gi";
 import {GiBrain} from "react-icons/gi";
 import {GiSandSnake} from "react-icons/gi";
+import {BiCalendarStar} from "react-icons/bi";
+import {TbHeartRateMonitor} from "react-icons/tb";
+
 import { useContext } from 'react';
 
 import Calculator from './Calculator';
@@ -19,6 +22,8 @@ import Tic from './Tic';
 import Slots from './Slots';
 import Match from './Match';
 import Snake from './Snake';
+import JobTracker from './JobTracker'
+import Calendar from './Calendar';
 
 const styleGit = {color:"maroon"};
 
@@ -109,6 +114,39 @@ export default function Projects()
         </Card>
       </Accordion>
       </IconContext.Provider>
+
+
+      <div className='prog'>
+      <p >In progress. . . </p>
+      </div>
+      <Accordion defaultActiveKey="0">
+        <Card>
+          <Card.Header>
+            <ContextAwareToggle eventKey="6">Calendar</ContextAwareToggle>
+          </Card.Header>
+          <Accordion.Collapse eventKey="6">
+            <Card.Body>
+              
+             
+              <a href = "https://github.com/Y2Kuwu/React-Calendar" className='git' target="_blank" rel="noopener noreferrer"><BiCalendarStar style={styleGit}/></a>
+              <Calendar></Calendar>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card>
+          <Card.Header>
+            <ContextAwareToggle eventKey="7">Job Tracker</ContextAwareToggle>
+          </Card.Header>
+          <Accordion.Collapse eventKey="7">
+            <Card.Body>
+            <a href= "https://github.com/Y2Kuwu/ReactAppTrack" target="_blank" rel="noopener noreferrer"><TbHeartRateMonitor style={styleGit}/></a>
+            <JobTracker></JobTracker>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+      </Accordion>
+
+      
 </>
  );
 }

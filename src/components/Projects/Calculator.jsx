@@ -12,8 +12,8 @@ export default function Calculator(){
   </Card.Header>
   <Accordion.Collapse eventKey="6">
     <Card.Body className="calc">
-    <p>Interactive calculator with accurate calculations, responsive design, and a simple layout. JS with class based functions, Jquery, CSS, and basic HTML</p>
-      <img src = "calculator.png"></img>
+    <p>Interactive calculator with accurate calculations, responsive design, and a simple layout. JS with class based functions, Jquery, CSS, and basic HTML.</p>
+      <img src = "calculator.png" className="calcHere"></img>
       
 
     </Card.Body>
