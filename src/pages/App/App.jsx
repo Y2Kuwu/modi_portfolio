@@ -29,6 +29,7 @@ function App()
        
         
         <Routes>
+        <Route path = "/" element={<HomePage/>}/>
         <Route path = "/HomePage" element={<HomePage/>}/>
         <Route path = "/ContextAwareToggle" element={<ContextAwareToggle/>}/> 
         <Route path = "/Links" element={<Links/>} /> 
