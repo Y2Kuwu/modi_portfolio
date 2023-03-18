@@ -151,6 +151,11 @@ code {
   border-radius: 10px;
   text-align: center;
 }
+.calcHere
+{
+  max-width: 15rem;
+}
+
 .tic
 {
   font-family: 'IBM Plex Mono';
@@ -162,7 +167,6 @@ code {
 #tic1,#tic2,#tic3,#tic4
 {
   max-width: 30rem;
-  
 }
 .pTic
 {
@@ -174,13 +178,12 @@ code {
 {
   font-family: 'IBM Plex Mono';
 
-  color: wheat;
-  background-color: #1e2127;
+  color: black;
+  background-color: gray;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  max-height: 60%;
-  max-width: 60%;
+
   text-align: center;
   align-items: center;
 }
@@ -196,11 +199,12 @@ code {
   flex-direction: column;
   align-items: center;
 }
-  .cheat, .score
+
+  #slot1, #slot2, #slot3, #slot4
   {
-    display: inline-block;
-    max-width: 30rem;
+    max-width: 19rem;
   }
+
   .slotWord
   {
     background-color: black;
@@ -252,8 +256,12 @@ code {
   display: flex;
   flex-direction: column;
   background-color: #282c34;
+
+
+  flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  justify-content: center;
   height: auto;
   max-width: 80%;
 }
@@ -270,7 +278,6 @@ code {
   /* position: fixed; */
   z-index: 2;
   margin-left: 10rem;
-  background-color: orange;
 }
 
 ul
@@ -571,16 +578,32 @@ ul:visited
     font-size: 2rem;
   }
 
-  /* .dynNav
+  .dynNav
 {
   margin: auto;
-  margin-left: 10.5rem;
+  margin-left: 10.7rem;
   padding: 1rem;
   width: 55%;
   height: 60%;
   z-index: 2;
   
-} */
+}
+
+
+
+.dynShift
+{
+
+  margin-left: 10.7rem;
+  width: 55%;
+  height: 60%;
+  z-index: 2;
+}
+
+.allPro
+{
+
+}
 }
 
 

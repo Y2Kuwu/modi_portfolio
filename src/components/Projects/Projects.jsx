@@ -31,6 +31,7 @@ export default function Projects()
 {
  return(
   <>
+  <div className = "allPro">
   <IconContext.Provider value={{className : "git", size: 50}}>
       <Accordion defaultActiveKey="0">
         <Card>
@@ -146,7 +147,7 @@ export default function Projects()
         </Card>
       </Accordion>
 
-      
+      </div>
 </>
  );
 }
