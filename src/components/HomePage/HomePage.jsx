@@ -9,7 +9,7 @@ function passStatement()
 
 }
 
-class HomePage extends Component 
+export default class HomePage extends Component 
 {
     constructor(props){
     super(props)
@@ -20,6 +20,7 @@ class HomePage extends Component
         brandState : '',
         brandPlaceHolder: '',
         count: 0,
+        hide: ''
     }   
     this.countHere = this.countHere.bind(this);
     this.checkHide = this.checkHide.bind(this);
@@ -43,13 +44,15 @@ class HomePage extends Component
 
 checkHide()
 {
-    if(this.props.data == false)
-    {
-        console.log(this.props.data)
-    this.setState(d =>({
-        statement: this.props.data
-    }))
-}}
+    this.setState(this.hide ,this.props.data)
+
+    // if(this.props.data == false)
+    // {
+        console.log(this.state.hide)
+    // this.setState(d =>({
+    //     statement: this.props.data
+    
+}
 
 
 render(){
@@ -65,9 +68,12 @@ render(){
         this.state.brandState = ''
     }
 return(
-    <>
+
+
+        <>
         
         <img src={'/me_blk&whtedit.png'} className="myPicture" onClick={() => this.setState({statement : !statement}) }/>
+   
         {statement
             
         ?   <div className="myState">
@@ -97,8 +103,8 @@ return(
         
         :null
         }
-        
+ 
+ 
     </>
 )}
 }
-export {HomePage, passStatement}

@@ -267,10 +267,10 @@ code {
 
 .shiftNav
 {
-  position: fixed;
+  /* position: fixed; */
   z-index: 2;
   margin-left: 10rem;
-
+  background-color: orange;
 }
 
 ul
@@ -571,7 +571,7 @@ ul:visited
     font-size: 2rem;
   }
 
-  .dynNav
+  /* .dynNav
 {
   margin: auto;
   margin-left: 10.5rem;
@@ -580,11 +580,18 @@ ul:visited
   height: 60%;
   z-index: 2;
   
+} */
 }
+
+
+.dynShift
+{
+  margin-left: 40rem;
+ 
+  width: 35%;
+  height: 60%;
+  z-index: 2;
 }
-
-
-
 
 
 
@@ -601,7 +608,6 @@ ul:visited
     width: 55%;
     height: 60%;
     z-index: 2;
-    
   }
 
   .skyward

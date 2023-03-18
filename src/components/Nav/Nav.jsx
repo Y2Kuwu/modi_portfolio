@@ -2,7 +2,7 @@ import '../../index.css';
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import App from '../../pages/App/App';
-import { HomePage } from '../HomePage/HomePage';
+import  HomePage  from '../HomePage/HomePage';
 
 
 export default class Nav extends Component
@@ -11,18 +11,24 @@ export default class Nav extends Component
     super(props)
     this.state=
     {
-        isHome: true,
-        xPos: '',
-        yPos: '',
-        location: 0,
+        // isHome: true,
+        // xPos: '',
+        // yPos: '',
+        // location: 0,
         clicked: false,
-        //thisStyle: "dynNav",
+        thisStyle: "dynNav",
         count : 0,
     }
     // this.handlehome = this.handlehome.bind(this)
     // onClick ={this.handlehome}
-    this.handleClickedLink = this.handleClickedLink.bind(this , false);
-    this.handleShift = this.handleClickedLink.bind(this);
+    this.handleClickedLink = this.handleClickedLink.bind(this);
+    this.handleClickedHome = this.handleClickedHome.bind(this);
+    // this.handleShift = this.handleShift.bind(this);
+
+    // this.handleClickedLink = () =>{
+    //     this.setState({clicked :  , thisStyle : "dynShift"})
+    // }
+
 }
 // handlehome = evt =>
 //     {
@@ -39,7 +45,24 @@ handleClickedLink()
     this.setState(currState=>
         ({
             clicked : !currState.clicked,
+            thisStyle: "dynShift"
+
         }))
+        console.log("here")
+        //this.handleShift()
+        
+}
+
+handleClickedHome()
+{
+    this.setState(currState=>
+        ({
+            clicked : currState.clicked,
+            thisStyle: "dynNav"
+
+        }))
+        console.log("here")
+        //this.handleShift()
         
 }
 
@@ -49,6 +72,7 @@ handleClickedLink()
 //         ({
 //             thisStyle : "shiftNav"
 //         }))
+//         console.log(this.state.thisStyle)
 // }
     
 render(){
@@ -64,18 +88,24 @@ render(){
 
   
         
-        {/* <nav className = {this.state.thisStyle}> */}
-        <nav className = "dynNav">
+        <nav className = {this.state.thisStyle}>
+        {/* <nav className = "dynNav"> */}
            
-        <ul>
-        <li ><Link to ="/HomePage" id = "li1" onClick={()=>this.handleClickedLink.bind(this , true)}>Home</Link></li>
-        {/* <li ><Link to = "/Links" id = "li2" onClick={()=>this.handleShift() (this.state.count +1)}>My links</Link></li> */}
-        <li ><Link to = "/Links" id = "li2" >My links</Link></li>
-
-        <li ><Link to = "/Contact" id = "li3" onClick={()=>this.handleClickedLink.bind(this , true)}>Contact info</Link></li>
+        <ul>        
+        {/* <li ><Link to ="/HomePage" id = "li1" onClick={()=>this.handleClickedLink.bind(this , true)}>Home</Link></li> */}
+        <Fragment></Fragment>
+        <li ><Link to ="/HomePage" id = "li1" onClick={this.handleClickedHome} data = {this.state.clicked.valueOf.toString()}>Home</Link></li>
+        {/* <li ><Link to = "/Links" id = "li2" onClick={()=>this.handleShift() (this.state.count +1)}>My links</Link></li> */} 
+        {/* <li ><Link to = "/Links" id = "li2" onClick={()=>this.handleClickedLink.bind(this , true)} >My links</Link></li> */}
+        {/* <li ><Link to = "/Contact" id = "li3" onClick={()=>this.handleClickedLink.bind(this , true)}>Contact info</Link></li> */}
+        
+        <li ><Link to = "/Links" id = "li2" onClick={this.handleClickedLink} >My links</Link></li> 
+        <li ><Link to = "/Contact" id = "li3" onClick={this.handleClickedLink}>Contact info</Link></li> 
 
         </ul>
         </nav>
+
+        {/* <HomePage/> */}
         
 
 </>

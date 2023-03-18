@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import {HomePage} from "../../components/HomePage/HomePage";
+import HomePage from "../../components/HomePage/HomePage";
 import Nav from "../../components/Nav/Nav";
 //import './App.css';
 import '../../index.css';
@@ -13,7 +13,7 @@ import { useState } from "react";
 
 
 
-function App(props)
+function App()
 {
     const [hide, setHide] = useState(false);
     // const onClick = () => setHide(true);
@@ -25,15 +25,16 @@ function App(props)
             
         <>
         <Nav />
-        {/* <HomePage/> */}
         
+       
         
         <Routes>
-        <Route path = "/HomePage" element={<HomePage/>}/> 
+        <Route path = "/HomePage" element={<HomePage/>}/>
         <Route path = "/ContextAwareToggle" element={<ContextAwareToggle/>}/> 
         <Route path = "/Links" element={<Links/>} /> 
         <Route path = "/Contact" element={<Contact/>} /> 
-        <Route path = "/Game"/>
+        {/* <Route path = "/Game"/> */}
+        
 
         </Routes>
         {/* <Hide/> */}
