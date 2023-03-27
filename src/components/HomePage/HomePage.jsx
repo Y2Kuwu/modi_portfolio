@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import  IntTrack  from "../NameBrand/NameBrand";
-
+import {TbHandClick} from "react-icons/tb";
 
 
 // const profile = document.getElementsByClassName("myPicture");
@@ -20,7 +20,9 @@ export default class HomePage extends Component
         brandState : '',
         brandPlaceHolder: '',
         count: 0,
-        hide: ''
+        hide: '',
+
+        color: ''
     }   
     this.countHere = this.countHere.bind(this);
     this.checkHide = this.checkHide.bind(this);
@@ -45,7 +47,7 @@ export default class HomePage extends Component
 checkHide()
 {
     this.setState(this.hide ,this.props.data)
-
+    
     // if(this.props.data == false)
     // {
         console.log(this.state.hide)
@@ -72,15 +74,14 @@ return(
 
         <>
         
-        <img src={'/me_blk&whtedit.png'} className="myPicture" onClick={() => this.setState({statement : !statement}) }/>
-   
+        <img src={'/me_blk&whtedit.png'} className="myPicture" onClick={() => this.setState({statement : !statement, color: 'transparent'}) }></img>
+        <TbHandClick className="clicker" size={40} color={this.state.color}/>
+
         {statement
             
         ?   <div className="myState">
             <div className="nameBrander">
             {this.state.brandState}
-           
-            
        
             
             
