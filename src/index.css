@@ -64,12 +64,16 @@ code {
   border-radius: 5%;
   box-shadow: #282c34 4px 4px;
   z-index: 1;
-  background-color: wheat;
+  background-color: #292f3d;
   
 }
 .myPicture:hover
 {
-  background-color: #61dafb;
+  background-color: white;
+
+  outline-style: solid;
+  outline-color: #292f3d;
+  box-shadow: #282c34 4px 4px;
   filter: blur(2px);
 }
 
@@ -264,6 +268,65 @@ code {
   justify-content: center;
   height: auto;
   max-width: 80%;
+}
+
+.header
+{
+  
+  background-color: #292f3d;
+  min-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  color: white;
+}
+
+#mistyMt
+{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  min-height: auto;
+  outline-style: solid;
+
+  height: auto;
+  width: auto;
+  justify-content: center;
+}
+
+#mistierMt
+{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  min-height: auto;
+  outline-style: solid;
+  height: auto;
+  width: auto;
+  justify-content: center;
+}
+
+.footer
+{
+  background-color: #292f3d;
+  min-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.mid
+{
+ 
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
 }
 
 .dynNav
@@ -609,7 +672,7 @@ ul:visited
 
 .dynShift
 {
-  margin-left: 40rem;
+  margin-left: 12rem;
  
   width: 35%;
   height: 60%;
@@ -622,7 +685,7 @@ ul:visited
 
 
  @media screen and (min-width: 900px) {
- 
+  
   .dynNav
   {
     margin: auto;

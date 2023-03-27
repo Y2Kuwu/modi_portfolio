@@ -94,6 +94,10 @@ render(){
         <ul>        
         {/* <li ><Link to ="/HomePage" id = "li1" onClick={()=>this.handleClickedLink.bind(this , true)}>Home</Link></li> */}
         <Fragment></Fragment>
+
+
+
+
         <li ><Link to ="/HomePage" id = "li1" onClick={this.handleClickedHome} data = {this.state.clicked.valueOf.toString()}>Home</Link></li>
         {/* <li ><Link to = "/Links" id = "li2" onClick={()=>this.handleShift() (this.state.count +1)}>My links</Link></li> */} 
         {/* <li ><Link to = "/Links" id = "li2" onClick={()=>this.handleClickedLink.bind(this , true)} >My links</Link></li> */}

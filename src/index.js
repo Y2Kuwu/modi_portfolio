@@ -12,7 +12,9 @@ root.render(
     <Router>
    
     <App />
-    
+    <div className="footer"> 
+        <img src = "mtBottom.png" id = "mistierMt"/>
+        </div>
     </Router>
     //removed strict// was duplicating Intrack
 );
