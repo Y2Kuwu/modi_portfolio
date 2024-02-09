@@ -290,7 +290,7 @@ code {
   min-height: auto;
   outline-style: solid;
 
-  height: auto;
+  height: 25rem;
   width: auto;
   justify-content: center;
   
@@ -298,11 +298,11 @@ code {
 
 #mistierMt
 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   min-height: auto;
   outline-style: solid;
-  height: auto;
+  height: 25rem;
   width: auto;
   justify-content: center;
   
@@ -758,5 +758,12 @@ ul:visited
   position: absolute;
   margin-top: 24rem;
   margin-left: -3rem;
-  color: maroon;
+  color: whitesmoke;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50%{
+    opacity: 0;
+  }
 }

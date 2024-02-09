@@ -74,7 +74,7 @@ return(
 
         <>
         
-        <img src={'/me.jpg'} className="myPicture" onClick={() => this.setState({statement : !statement, color: 'transparent'}) }></img>
+        <img src={'me.jpg'} className="myPicture" onClick={() => this.setState({statement : !statement, color: 'transparent'}) }></img>
         <TbHandClick className="clicker" size={40} color={this.state.color}/>
 
         {statement
